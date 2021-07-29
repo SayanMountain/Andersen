@@ -1,4 +1,4 @@
-public class lesson_1 {
+public class HomeWorkApp {
     public static void main (String [] argc) {
         PrintThreeWords temp = new PrintThreeWords();
         temp.print_three_names ();
