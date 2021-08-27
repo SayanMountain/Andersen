@@ -1,0 +1,325 @@
+{
+  "id": "667c0296-d9e4-410f-bfd8-a2258be39b72",
+  "version": "2.0",
+  "name": "lesson_9_PMI_task_2",
+  "url": "https://habr.com/ru/all/",
+  "tests": [{
+    "id": "36fe5677-3e37-40dd-b91b-99756456040b",
+    "name": "task_2_habr",
+    "commands": [{
+      "id": "2e30e65b-5846-498a-8d9b-b081331932a5",
+      "comment": "",
+      "command": "open",
+      "target": "https://habr.com/ru/all/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad45cb4b-da61-4bbb-bfee-490e4d73cbc8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tm-header-user-menu__toggle",
+      "targets": [
+        ["css=.tm-header-user-menu__toggle", "css:finder"],
+        ["xpath=//div[@id='app']/div/header/div/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "764d0f29-b57c-4bc2-9e21-37213839daf4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Регистрация",
+      "targets": [
+        ["linkText=Регистрация", "linkText"],
+        ["css=.tm-user-menu__auth-button_primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Регистрация')]", "xpath:link"],
+        ["xpath=//div[@id='app']/div/header/div/div/div[2]/div/div/div[2]/div/div/div/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://habr.com/kek/v1/auth/habrahabr-register/?back=/ru/all/&hl=ru')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Регистрация')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "22940471-9451-4976-895b-832875393027",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=nickname_field",
+      "targets": [
+        ["id=nickname_field", "id"],
+        ["name=login", "name"],
+        ["css=#nickname_field", "css:finder"],
+        ["xpath=//input[@id='nickname_field']", "xpath:attributes"],
+        ["xpath=//form[@id='register_form']/fieldset/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac78477c-22f5-4dd6-b246-797c0b501174",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=email_field",
+      "targets": [
+        ["id=email_field", "id"],
+        ["name=email", "name"],
+        ["css=#email_field", "css:finder"],
+        ["xpath=//input[@id='email_field']", "xpath:attributes"],
+        ["xpath=//form[@id='register_form']/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db4ec83a-9766-476c-9f54-8b9845ecdec7",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password_field",
+      "targets": [
+        ["id=password_field", "id"],
+        ["name=password", "name"],
+        ["css=#password_field", "css:finder"],
+        ["xpath=//input[@id='password_field']", "xpath:attributes"],
+        ["xpath=//form[@id='register_form']/fieldset/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "faa0b559-5377-43b0-a5e6-d753eeb69141",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password_repeat",
+      "targets": [
+        ["id=password_repeat", "id"],
+        ["name=password2", "name"],
+        ["css=#password_repeat", "css:finder"],
+        ["xpath=//input[@id='password_repeat']", "xpath:attributes"],
+        ["xpath=//form[@id='register_form']/fieldset/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f59a53ae-cf10-46dc-a9e1-d0b1d1050334",
+      "comment": "",
+      "command": "click",
+      "target": "css=.checkbox__label",
+      "targets": [
+        ["css=.checkbox__label", "css:finder"],
+        ["xpath=//form[@id='register_form']/fieldset/div[6]/label/span", "xpath:idRelative"],
+        ["xpath=//label/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Я принимаю условия Пользовательского соглашения')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "93a7875e-ff5f-44dc-817a-325c5e17716b",
+      "comment": "",
+      "command": "pause",
+      "target": "css=.recaptcha-checkbox-border",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "274edf84-4041-4953-832b-7e87b7724441",
+      "comment": "",
+      "command": "pause",
+      "target": "css=.recaptcha-checkbox-border",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5dd4f0b-0c0a-4b77-b2b8-807401340f42",
+      "comment": "",
+      "command": "click",
+      "target": "id=registration_button",
+      "targets": [
+        ["id=registration_button", "id"],
+        ["name=go", "name"],
+        ["css=#registration_button", "css:finder"],
+        ["xpath=//button[@id='registration_button']", "xpath:attributes"],
+        ["xpath=//form[@id='register_form']/fieldset/div[8]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Зарегистрироваться')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "85d02846-7d07-40ce-8ea7-90982f80c7a1",
+    "name": "task_2_habr_create_new_note",
+    "commands": [{
+      "id": "7f940d78-090d-4a81-a187-c3b5942e0e52",
+      "comment": "",
+      "command": "open",
+      "target": "https://habr.com/ru/all/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95cb7b82-63f5-4fcf-b7e0-c765e8d7efd7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tm-header-user-menu__toggle",
+      "targets": [
+        ["css=.tm-header-user-menu__toggle", "css:finder"],
+        ["xpath=//div[@id='app']/div/header/div/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcb190f8-1b83-404d-a9d2-1de8cb957879",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Войти",
+      "targets": [
+        ["linkText=Войти", "linkText"],
+        ["css=.tm-user-menu__auth-button:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Войти')]", "xpath:link"],
+        ["xpath=//div[@id='app']/div/header/div/div/div[2]/div/div/div[2]/div/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://habr.com/kek/v1/auth/habrahabr/?back=/ru/all/&hl=ru')]", "xpath:href"],
+        ["xpath=//div/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f2a5106-6f8e-470c-88a7-d4896159431f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form__field:nth-child(1) > .form__field-label",
+      "targets": [
+        ["css=.form__field:nth-child(1) > .form__field-label", "css:finder"],
+        ["xpath=//form[@id='login_form']/fieldset/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'E-mail')]", "xpath:innerText"]
+      ],
+      "value": "E-mail"
+    }, {
+      "id": "55987a93-9695-4013-a139-bfad4e3f3fc2",
+      "comment": "",
+      "command": "type",
+      "target": "id=email_field",
+      "targets": [
+        ["id=email_field", "id"],
+        ["name=email", "name"],
+        ["css=#email_field", "css:finder"],
+        ["xpath=//input[@id='email_field']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "tchimitov2013@ya.ru"
+    }, {
+      "id": "2efb2da6-ec10-47b6-b33f-fbf199bc2fc2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form__field:nth-child(2) > .form__field-label",
+      "targets": [
+        ["css=.form__field:nth-child(2) > .form__field-label", "css:finder"],
+        ["xpath=//form[@id='login_form']/fieldset/div[2]/label", "xpath:idRelative"],
+        ["xpath=//div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Пароль')]", "xpath:innerText"]
+      ],
+      "value": "Пароль"
+    }, {
+      "id": "b2b53faf-c74d-4b4e-818a-741a23ac72cc",
+      "comment": "",
+      "command": "type",
+      "target": "id=password_field",
+      "targets": [
+        ["id=password_field", "id"],
+        ["name=password", "name"],
+        ["css=#password_field", "css:finder"],
+        ["xpath=//input[@id='password_field']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Kandidat2021_"
+    }, {
+      "id": "6077a8e7-06ee-4bcc-8cca-09fe1a0b6077",
+      "comment": "",
+      "command": "click",
+      "target": "name=go",
+      "targets": [
+        ["name=go", "name"],
+        ["css=.button", "css:finder"],
+        ["xpath=//button[@name='go']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/fieldset/div[4]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc8dbce8-0804-47ee-b82b-c181205a3ec0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tm-header-user-menu__toggle",
+      "targets": [
+        ["css=.tm-header-user-menu__toggle", "css:finder"],
+        ["xpath=//div[@id='app']/div/header/div/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4de080d1-fede-4c64-9da6-6db9c7ff14e4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Как стать автором",
+      "targets": [
+        ["linkText=Как стать автором", "linkText"],
+        ["css=.tm-user-menu__menu_bottom:nth-child(4) > .tm-user-menu__menu-link:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Как стать автором')])[2]", "xpath:link"],
+        ["xpath=//div[@id='app']/div/header/div/div/div[2]/div[3]/div/div[2]/div/div/div/div[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/ru/sandbox/start/')])[2]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8ffa6e4-8123-4067-abba-a8d34af4668f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Написать пост",
+      "targets": [
+        ["linkText=Написать пост", "linkText"],
+        ["css=.tm-write-button:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Написать пост')]", "xpath:link"],
+        ["xpath=//div[@id='app']/div/div[2]/main/div/div/div/div/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru/sandbox/new/')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Написать пост')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff93b848-0b78-4a00-b686-1b78e6004629",
+      "comment": "",
+      "command": "type",
+      "target": "css=.title",
+      "targets": [],
+      "value": "Заголовок"
+    }, {
+      "id": "e142ebf3-6911-484a-923a-07c2eaeaef24",
+      "comment": "",
+      "command": "type",
+      "target": "css=.editor",
+      "targets": [
+        ["css=.editor", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/main/div/div/div/div/div/div[3]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div/div[3]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "Десять слов"
+    }, {
+      "id": "f118a836-45e5-41fb-886e-6510027d9f79",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tm-publication__button",
+      "targets": [
+        ["css=.tm-publication__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/main/div/div/div/div/div/div[2]/div/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//main/div/div/div/div/div/div[2]/div/div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Готово к публикации')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cc0386bf-c029-42f6-91d7-36c60b0407bb",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["36fe5677-3e37-40dd-b91b-99756456040b"]
+  }],
+  "urls": ["https://habr.com/ru/all/"],
+  "plugins": []
+}
