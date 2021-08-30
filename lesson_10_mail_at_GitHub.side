@@ -1,0 +1,152 @@
+{
+  "id": "e5aed46f-ae7a-4fa5-b75b-7313fd43d0f3",
+  "version": "2.0",
+  "name": "lesson_10",
+  "url": "https://github.com/",
+  "tests": [{
+    "id": "e2dfc8a3-b077-4abc-85f3-4c372487f76b",
+    "name": "lesson_10_E-mail_at_GitHub",
+    "commands": [{
+      "id": "5aea94d6-ae24-40dd-9775-384085504bb6",
+      "comment": "",
+      "command": "open",
+      "target": "https://github.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f2b773be-9196-4bc7-9803-aaa9c25f4e29",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "697x719",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ca1cf1d-38b2-4c1c-93f1-04bdb4f88b29",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign up",
+      "targets": [
+        ["linkText=Sign up", "linkText"],
+        ["css=.mr-sm-5", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign up')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2661b50-6f91-4457-b7ab-2717c72bbc84",
+      "comment": "",
+      "command": "click",
+      "target": "css=.d-flex > .font-mktg",
+      "targets": [
+        ["css=.d-flex > .font-mktg", "css:finder"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4868a823-2d46-4b96-899d-84978388cf05",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in →",
+      "targets": [
+        ["linkText=Sign in →", "linkText"],
+        ["css=.font-mktg > .color-text-white", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in →')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/login?return_to=https%3A%2F%2Fgithub.com%2Fsignup%3Fref_cta%3DSign%2Bup%26ref_loc%3Dheader%2Blogged%2Bout%26ref_page%3D%252F%26source%3Dheader-home')]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in →')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "21c32adc-a469-4558-9eef-fb662de92cbb",
+      "comment": "",
+      "command": "click",
+      "target": "id=js-pjax-container",
+      "targets": [
+        ["id=js-pjax-container", "id"],
+        ["css=#js-pjax-container", "css:finder"],
+        ["xpath=//main[@id='js-pjax-container']", "xpath:attributes"],
+        ["xpath=//main", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1270fa5-76f9-48ad-9836-071867307d5f",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div[4]/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d66ef5c2-15d5-4f2a-8acf-31691cf50506",
+      "comment": "",
+      "command": "click",
+      "target": "id=js-pjax-container",
+      "targets": [
+        ["id=js-pjax-container", "id"],
+        ["css=#js-pjax-container", "css:finder"],
+        ["xpath=//main[@id='js-pjax-container']", "xpath:attributes"],
+        ["xpath=//main", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "869b287a-e60e-4258-a424-0723b68f9db9",
+      "comment": "",
+      "command": "click",
+      "target": "id=login_field",
+      "targets": [
+        ["id=login_field", "id"],
+        ["name=login", "name"],
+        ["css=#login_field", "css:finder"],
+        ["xpath=//input[@id='login_field']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div[4]/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "tchimitov2013@ya.ru"
+    }, {
+      "id": "4edcd82a-41f8-40c7-8230-1a0632ffc3a9",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div[4]/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "PasswordWasHere"
+    }, {
+      "id": "fd6b5b0b-7d1e-4246-bcb4-7d4ead047aa2",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div[4]/form/div/input[12]", "xpath:idRelative"],
+        ["xpath=//input[12]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "845fa7be-db40-4ce8-8a36-c5fc1c154914",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e2dfc8a3-b077-4abc-85f3-4c372487f76b"]
+  }],
+  "urls": ["https://github.com/"],
+  "plugins": []
+}
